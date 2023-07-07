@@ -3,7 +3,7 @@
 #
 # Friday, Jun 30, 2023
 #
-# This script works was designed tested in Ubuntu 22.04.2 LTS
+# This script was designed and tested in Ubuntu 22.04.2 LTS
 #
 
 getLineCountByOwner() {
