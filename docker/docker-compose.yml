@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    image: nginx:alpine
+    volumes:
+      - ./car-repair-html-template/:/usr/share/nginx/html
+    networks:
+      - my-network
+    ports:
+      - "8080:80"
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=fake_password
+    networks:
+      - my-network
+networks:
+  my-network:

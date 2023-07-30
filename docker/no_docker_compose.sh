@@ -1,11 +1,9 @@
 #!/bin/bash
 
 WEBSITE_ZIP_FILE="car-repair-html-template.zip"
-
 WEB_IMAGE_NAME="devops-website-image"
 WEB_CONTAINER_NAME="devops-website-container"
 DB_CONTAINER_NAME="mock-mysql"
-
 
 # Unzip the webpage of choice
 unzip -qq $WEBSITE_ZIP_FILE
@@ -37,5 +35,3 @@ fi
 
 docker network connect my-network $WEB_CONTAINER_NAME
 docker network connect my-network $DB_CONTAINER_NAME
-
-
